@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@600&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --main-background-color: #FEE9FF;
+    --main-text-color: #030303;
+    --secondary-text-color: #92929D;
+    --purple-accent: #7B1D80;
+    --section-background-color: #FCFCFC;
+    --main-bg-nav-color: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    transition: 0.01s;
+}
+
+.nav-link{
+    background-color: var(--main-bg-nav-color);
+    margin-left: -2%;
+    width: 104.5%;
+}
+
+nav {
+    background-color: var(--main-bg-nav-color);
+    height: 75px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-background-color);
+    width: 80%;
+    border-radius: 22px;
+    padding: 44px;
+    height: 80%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 48px;
+}
+
+.image img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.gray {
+    color: var(--secondary-text-color);
+    font-size: 46px;
+}
+
+.purple {
+    color: var(--purple-accent);
+    font-weight: 501;
+}
+
+@media only screen and (min-width: 1354px) {
+    .navbar-brand {
+      font-size: 32px;
+    }
+  
+    .navbar-nav {
+      width: 35%;
+    }
+  
+    .nav-link {
+      font-size: large;
+    }
+  }
+  
+  @media only screen and (max-width: 1099px) {
+    .navbar-nav {
+      width: 45%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .navbar-nav {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .nav-link {
+      background-color: #fff;
+      width: 226%;
+    }
+  }
+@media only screen and (min-width: 992px){
+    .text{
+        width: 380px;
+    }
+}
+@media only screen and (max-width: 1099px) {
+    .text{
+        font-size: 40px;
+    }
+    .gray{
+        font-size: 38px;
+    }
+    .image img {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 770px){
+    .content{
+        display: block;
+    }
+    .text{
+        font-size: 32px;
+        text-align: center;
+    }
+    .gray{
+        font-size: 30px;
+    }
+    .image img {
+        width: 250px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@600&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --main-background-color: #FEE9FF;
+  --main-text-color: #030303;
+  --secondary-text-color: #92929D;
+  --purple-accent: #7B1D80;
+  --section-background-color: #ffffff;
+  --main-bg-nav-color: #fff;
+  --front-end: 85;
+  --back-end: 60;
+  --ui-ux: 50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  transition: 0.01s;
+}
+
+.nav-link {
+  background-color: var(--main-bg-nav-color);
+  margin-left: -2%;
+  width: 104.5%;
+}
+
+nav {
+  background-color: var(--main-bg-nav-color);
+  height: 75px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 66px;
+}
+
+.content {
+  background-color: var(--section-background-color);
+  width: 80%;
+  border-radius: 22px;
+  padding: 44px;
+}
+
+.progresss-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progresss-container .progresss {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: var(--main-bg-nav-color);
+  background: var(--secondary-text-color) linear-gradient(to right, transparent 50%, var(--purple-accent) 0);
+}
+
+.progresss-container .progresss h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.progresss-container .progresss h3 span {
+  font-size: 0.65em;
+  font-weight: 400;
+}
+
+.progresss-container .progresss h4 {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.progresss-container .progresss::before {
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+
+.progresss-container .progresss::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: var(--main-text-color);
+}
+
+.progresss-container .progresss-front::before {
+  background: var(--purple-accent);
+  transform: rotate(calc(((var(--front-end) - 50) * 0.01turn)));
+}
+
+.progresss-container .progresss-back::before {
+  background: var(--purple-accent);
+  transform: rotate(calc(((var(--back-end) - 50) * 0.01turn)));
+}
+
+.progresss-container .progresss-ui::before {
+  background: var(--purple-accent);
+  transform: rotate(calc(((var(--ui-ux) - 50) * 0.01turn)));
+}
+
+.skills {
+  background-color: var(--section-background-color);
+  width: 80%;
+  border-radius: 22px;
+  margin-top: 3em;
+  margin-left: 10%;
+  padding: 50px 5px 100px;
+}
+
+.skills-text {
+  text-align: center;
+}
+
+.skills-text h1 {
+  font-size: 36px;
+}
+
+.skills-text p {
+  font-size: 20px;
+  margin-top: 2em;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.language{
+  position: relative;
+  margin-bottom: 5%;
+}
+ .language img{
+  width: 180px;
+  position: relative;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.language img:hover{
+  margin-top: 2.5em;
+}
+
+.short{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  font-size: 32px;
+}
+
+.long{
+  position: absolute;
+  top: 0;
+  left: 3%;
+  font-size: 32px;
+}
+
+.angular{
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  font-size: 32px;
+}
+
+#angular-img:hover{
+  margin-top: 4em;
+}
+
+.node{
+  position: absolute;
+  top: 15%;
+  left: 16%;
+  font-size: 32px;
+}
+
+#node-img:hover{
+  margin-top: 5em;
+}
+
+.bootstrap{
+  position: absolute;
+  top: 0;
+  left: 11.9%;
+  font-size: 28px;
+}
+
+.figma{
+  position: absolute;
+  top: 0;
+  left: 10%;
+  font-size: 32px;
+}
+
+#figma-img{
+  width: 120px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-nav-color);
+  margin-top: 4em;
+  height: 50px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 1354px) {
+  .navbar-brand {
+    font-size: 32px;
+  }
+
+  .navbar-nav {
+    width: 35%;
+  }
+
+  .nav-link {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 1099px) {
+  .navbar-nav {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-nav {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link {
+    background-color: #fff;
+    width: 226%;
+  }
+}
+
+@media only screen and (max-width: 690px){
+  .progresss-container{
+    display: block;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+  }
+}
