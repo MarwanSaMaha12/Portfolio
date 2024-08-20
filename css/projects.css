@@ -50,7 +50,7 @@ nav {
 }
 
 .project h1 {
-    font-size: 28px;
+    font-size: 140%;
     margin-bottom: 1em;
 }
 
@@ -108,5 +108,20 @@ footer p {
     }
     .main{
       padding: 32px;
+    }
+  }
+  @media only screen and (max-width: 650px){
+    .project h1{
+      font-size: 90%;
+    }
+    .main{
+      padding: 10px;
+    }
+    .project img{
+      width: 200px;
+    }
+    .project{
+      margin-right: 25%;
+      margin-bottom: 1em;
     }
   }

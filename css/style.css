@@ -31,12 +31,12 @@ nav {
 
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--section-background-color);
     width: 80%;
     border-radius: 22px;
-    padding: 44px;
+    padding: 44px 20px;
     height: 80%;
 }
 
@@ -49,6 +49,7 @@ nav {
 .text {
     color: var(--text-color);
     font-size: 48px;
+    display: inline-block;
 }
 
 .image img {
@@ -64,6 +65,9 @@ nav {
 .purple {
     color: var(--purple-accent);
     font-weight: 501;
+}
+.br{
+    display: none;
 }
 
 @media only screen and (min-width: 1354px) {
@@ -96,6 +100,9 @@ nav {
     .nav-link {
       background-color: #fff;
       width: 226%;
+    }
+    .br{
+        display: block;
     }
   }
 @media only screen and (min-width: 992px){

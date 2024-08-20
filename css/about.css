@@ -58,6 +58,7 @@ nav {
   border-radius: 50%;
   color: var(--main-bg-nav-color);
   background: var(--secondary-text-color) linear-gradient(to right, transparent 50%, var(--purple-accent) 0);
+  margin-bottom: 4%;
 }
 
 .progresss-container .progresss h3 {
@@ -229,6 +230,16 @@ footer p {
   font-size: 16px;
 }
 
+.note{
+  display: none;
+}
+
+.note h1{
+  font-weight: 600;
+  font-size: larger;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1354px) {
   .navbar-brand {
     font-size: 32px;
@@ -269,5 +280,11 @@ footer p {
   .content{
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (pointer:coarse){
+  .note{
+    display: block;
   }
 }
