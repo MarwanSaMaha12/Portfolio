@@ -49,7 +49,6 @@ nav {
 .text {
     color: var(--text-color);
     font-size: 48px;
-    display: inline-block;
 }
 
 .image img {
